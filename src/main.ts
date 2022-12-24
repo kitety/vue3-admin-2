@@ -1,8 +1,7 @@
-import {createApp} from 'vue'
-import './style.css'
-import App from './App.vue'
-import {store} from "./store";
-import ElementPlus from 'element-plus'
+import { createApp } from "vue";
+import "./style.css";
+import App from "./App.vue";
+import { store } from "./store";
 import router from "./routes";
 import "virtual:svg-icons-register";
 import initSvgIcon from "@/icons/index";
@@ -10,14 +9,13 @@ import initSvgIcon from "@/icons/index";
 import installElementPlus from "./plugins/element";
 
 // 初始化css 重置css默认样式
-import 'normalize.css/normalize.css'
+import "normalize.css/normalize.css";
 // 全局 css
-import '@/styles/index.scss'
+import "@/styles/index.scss";
 
 const app = createApp(App);
-app.use(ElementPlus);
-app.use(router)
-app.use(initSvgIcon)
-app.use(store)
-app.use(installElementPlus)
-app.mount('#app')
+app.use(router);
+app.use(initSvgIcon);
+app.use(store);
+app.use(installElementPlus);
+app.mount("#app");

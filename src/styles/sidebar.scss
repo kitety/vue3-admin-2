@@ -1,7 +1,40 @@
 #app {
   .sidebar-container {
-    width: $sideBarWidth !important;
+    //width: $sideBarWidth !important;
     height: 100%;
     background-color: pink;
+    //background-color: $menuBg;
+
+    // menu未收起时样式
+    &-menu:not(.el-menu--collapse) {
+      width: $sideBarWidth;
+    }
+
+    .el-menu--collapse {
+      .submenu-title {
+        display: none;
+      }
+
+      .menu-icon {
+        margin: 0;
+      }
+    }
+
+    .el-submenu {
+      .el-menu {
+        .el-menu-item {
+          background-color: $subMenuBg !important;
+
+          &:hover {
+            background-color: $subMenuHover !important;
+          }
+        }
+      }
+    }
+
+
+    .el-menu {
+      border: none;
+    }
   }
 }

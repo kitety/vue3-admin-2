@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>DashBoard Page</h1>
+    缓存测试 <input type="text">
     <svg-icon icon-class="bug"></svg-icon>
     <!-- icon-class svg图标名称 class-name 额外的自定义类名 @click绑定事件 -->
     <svg-icon
@@ -21,6 +22,7 @@ const sayHi = () => {
   console.log("hi svg");
   proxy?.$message.success('11111')
 };
+
 </script>
 
 <style lang="scss">
